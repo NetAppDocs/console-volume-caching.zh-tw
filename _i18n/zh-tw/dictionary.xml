@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="5f63db6bf0512dc0612ee852c1faf373" category="doc">BlueXP volume caching</block>
+  <block id="b83ba84e8b66440b0a36bc88ba58ce87" category="paragraph">BlueXP volume caching是ONTAP 9 軟體的功能，它是一種遠端快取功能，可簡化檔案分發，透過將資源靠近使用者和運算資源的位置來減少 WAN 延遲，並降低 WAN 頻寬成本。磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區。您可以使用BlueXP volume caching快取來加快資料存取速度或卸載訪問量大的磁碟區的流量。快取磁碟區非常適合讀取密集型工作負載，尤其是客戶端需要重複存取相同資料的情況。</block>
+  <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">透過BlueXP volume caching，您可以獲得雲端的快取功能，特別是針對Amazon FSx for NetApp ONTAP、 Cloud Volumes ONTAP和本機工作環境。</block>
+  <block id="2012f97762e54c6c0012de439f8eb421" category="inline-link-macro">了解有關卷緩存的更多信息</block>
+  <block id="32e43821995e99fb72cdac5dd21f43b4" category="paragraph"><block ref="d441c17803a6d3d32848ba89d4709eae" category="inline-link-macro-rx"></block> 。</block>
+  <block id="9b5a1e6c05cb5a9a8a4d5f1e2605ce55" category="doc">BlueXP volume caching現在是卷緩存</block>
+  <block id="f8e8412fccd7f025d572fec3a13f08fe" category="paragraph">BlueXP volume caching已重新命名為磁碟區快取。</block>
+  <block id="1404848cfe6595d928cbdff8fae23869" category="paragraph">您可以透過選擇「*Mobility*」&gt;「*Volume caching*」從NetApp Console 左側導覽列存取它。</block>
+  <block id="bc2fe31b1e2682a9a79513d792e9c721" category="section-title">BlueXP現在是NetApp控制台</block>
+  <block id="995c8f79a8e07fbd8d519e45d03d6004" category="paragraph">NetApp控制台建立在增強和重組的BlueXP基礎之上，可在企業級內部和雲端環境中集中管理NetApp儲存和NetApp資料服務，提供即時洞察、更快的工作流程和簡化的管理，並且高度安全且合規。</block>
+  <block id="2ef9d641d45afe99b74ad6f9a9f797ad" category="inline-link-macro">NetApp控制台發行說明</block>
+  <block id="07a0717927710f1dcb5683cb20238dcb" category="paragraph">有關更改的詳細信息，請參閱<block ref="a3987562479f1a66db4eec298b79e00c" category="inline-link-macro-rx"></block>。</block>
+  <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">如果您只是想快速找到問題的答案，此常見問題解答可以為您提供協助。</block>
+  <block id="acb4c9a04e4760c031f72ceb892088ee" category="doc">磁碟區快取常見問題解答</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="0d6e5faf80b288a1d3277954d0b55ae8" category="inline-link"><block ref="0d6e5faf80b288a1d3277954d0b55ae8" category="inline-link-rx"></block></block>
+  <block id="6c9cda3f575fce2b59c81ac734f25c87" category="paragraph">*卷宗快取 URL 是什麼？ *對於 URL，在瀏覽器中輸入：<block ref="50afa4cc4e54d55b53b9cfffe1bc930c" category="inline-link-rx"></block>造訪BlueXP控制台。</block>
+  <block id="ce01fa818e0ea3677f470fba4801dc2d" category="paragraph">*您需要許可證才能使用卷宗快取嗎？ *不需要NetApp許可證文件 (NLF)。</block>
+  <block id="03de66a3bc883d54e10eff243b71fbab" category="paragraph">*如何啟用磁碟區快取？ *磁碟區快取不需要任何啟用。磁碟區快取選項會自動出現在NetApp控制台左側導覽列中。</block>
+  <block id="11b0112abbdba4f187a0d5cd55f67b6c" category="summary">磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區。您可以使用磁碟區快取來加快資料存取速度或卸載存取頻繁的磁碟區的流量。快取磁碟區非常適合讀取密集型工作負載，尤其是客戶端需要重複存取相同資料的情況。</block>
+  <block id="4c4d2004da2d4dab5bb560145ef937c7" category="doc">了解卷緩存</block>
+  <block id="acb735bd5a7c773d33ba29a45c50737a" category="paragraph">磁碟區快取是ONTAP 9 軟體的功能，它是一種遠端快取功能，可簡化檔案分發，透過將資源靠近使用者和運算資源的位置來減少 WAN 延遲，並降低 WAN 頻寬成本。磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區。您可以使用磁碟區快取來加快資料存取速度或卸載存取頻繁的磁碟區的流量。快取磁碟區非常適合讀取密集型工作負載，尤其是客戶端需要重複存取相同資料的情況。</block>
+  <block id="479f19475e2dd084513dab64284eb721" category="paragraph">透過磁碟區緩存，您可以獲得雲端的快取功能，特別是針對Amazon FSx for NetApp ONTAP、 Cloud Volumes ONTAP和本機工作環境。</block>
+  <block id="dd5ab32ff61153926563e4d2110445b6" category="paragraph">卷緩存還為分支機構提供了對公司資料集的存取。透過提供_熱資料_（需要從叢集中的多個控制器頻繁存取的資料），您可以提高交付給關鍵應用程式的效能。而且，透過快取位於世界各地多個位置的用戶本地熱數據，您可以透過同時存取集中數據集來增強他們的協作，同時還可以減少他們存取熱數據時收到的回應時間。</block>
+  <block id="3c031b939f6ec312ee601d021e7a6644" category="section-title">NetApp控制台</block>
+  <block id="953ec04cfd6a17011e0166e01775e88a" category="paragraph">可以透過NetApp控制台存取卷宗快取。</block>
+  <block id="0a0979a6d279475a420ea5c279943daa" category="paragraph">NetApp控制台提供企業級跨本機和雲端環境的NetApp儲存和資料服務的集中管理。需要控制台才能存取和使用NetApp資料服務。作為管理介面，它使您能夠從一個介面管理許多儲存資源。控制台管理員可以控制企業內所有系統的儲存和服務的存取。</block>
+  <block id="7118a6b22768dabe4720d84710ea1e43" category="paragraph">您不需要許可證或訂閱即可開始使用NetApp控制台，並且只有當您需要在雲端部署控制台代理程式以確保與儲存系統或NetApp資料服務的連接時才需要付費。但是，一些可從控制台存取的NetApp資料服務是需要授權或基於訂閱的。</block>
+  <block id="4d0bb76e32bfe205406b10f5dfa9d47b" category="paragraph">詳細了解<block ref="e6368f2dd82be1e975475a1098863578" category="inline-link-rx"></block>。</block>
+  <block id="da693da874d690d16f540e10e65a2321" category="section-title">什麼是緩存？</block>
+  <block id="a6d4ceba96fb1d711128b98f2e1eaa34" category="paragraph">快取是位於主機和資料來源之間的暫存位置。快取的目的是儲存來源資料中經常存取的部分，以便以比從來源取得資料更快的速度提供資料。快取在讀取密集型環境中最有用，在這種環境中資料被存取多次並由多個主機共用。快取系統比有資料來源的系統更快，這是透過更快的儲存系統和快取儲存空間與主機的接近性來實現的。</block>
+  <block id="1ff36319d88227573243b34cfcc88ca5" category="section-title">卷快取的好處</block>
+  <block id="e7b882d61a65174f42223c66c70096ee" category="paragraph">磁碟區快取具有以下優勢：</block>
+  <block id="ac662afad2227cc15160fd5b457146bd" category="list-text">加速混合雲基礎架構的效能</block>
+  <block id="00ebffbe73c6303da2faaad0ab45e519" category="list-text">透過將資料從一個雲端提供者快取到另一個雲端提供者來消除雲孤島</block>
+  <block id="3539435a6de515609cc1b8543224f713" category="list-text">降低儲存成本</block>
+  <block id="a1b38c81c5d745e1d6ec22e5dd6e03bc" category="list-text">跨地理位置協作</block>
+  <block id="c9ffd0422125f32e82a20e75ccd4fa42" category="list-text">能夠更快適應不斷變化的 IT 環境</block>
+  <block id="02472e415a539d0a8886679760e38e96" category="list-text">按需或基於訂閱的雲端中託管卷緩存</block>
+  <block id="90b267b6d1a3a176db85194015816bdf" category="section-title">使用卷宗快取可以做什麼</block>
+  <block id="96a73f3eb476a386c0d4022fdcd79b05" category="paragraph">卷快取可讓您充分利用多種NetApp技術來實現以下目標：</block>
+  <block id="b165c27356ec72ed87e0d89023b56a29" category="list-text">將資料從一個雲端提供者快取到另一個雲端供應商</block>
+  <block id="6d14d0fea89a1c59e9646774b2dce3ef" category="list-text">查看和編輯快取導出策略</block>
+  <block id="fd420f91fd55c70ed0b581da9becda92" category="list-text">調整現有快取的大小</block>
+  <block id="920c52111a4f53311c7b220606acb733" category="list-text">刪除快取</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
+  <block id="3d55ff142f5e56c58635f96fb60c71d0" category="paragraph">NetApp不會向您收取磁碟區快取費用，但您需要檢查您的雲端供應商是否有適用的資料入口和出口費用。</block>
+  <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">授權</block>
+  <block id="4417f17d6aeb62c4957925fd7183a07c" category="paragraph">卷快取不需要特殊的ONTAP許可證。</block>
+  <block id="331a9d90178c830eec27205a387c2dfa" category="section-title">磁碟區快取的工作原理</block>
+  <block id="72534499f07252c8719e630ee58c0667" category="paragraph">快取磁碟區是由來源磁碟區支援的稀疏填充磁碟區。快取磁碟區可以與來源磁碟區位於同一群集上，也可以位於不同的叢集上。</block>
+  <block id="30f631144fe5bb7751ead1fe9ac7c6f5" category="paragraph">快取卷提供對來源卷中的資料的訪問​​，而不需要所有資料都在快取卷中。透過僅保留熱資料（工作資料或最近使用的資料），可以有效管理快取磁碟區中的資料儲存。</block>
+  <block id="37557b8c90039bea4fa08bc67cc6b243" category="paragraph">如果快取磁碟區包含客戶端請求的數據，則磁碟區快取讀取請求。否則，磁碟區快取服務會從來源磁碟區請求資料並在滿足客戶端請求之前儲存資料。隨後的資料請求將直接從快取卷中提供。這可以提高重複存取相同資料時的效能，因為在第一次請求之後，資料不再需要透過網路傳輸或由過載的系統提供服務。</block>
+  <block id="4017ec2b586cd47355d18cabf7609659" category="summary">透過存取NetApp控制台中的服務開始使用磁碟區快取。</block>
+  <block id="152cc532030bdb299df4c0963b720fb4" category="doc">存取卷緩存</block>
+  <block id="cf073b020cede5876551f4905bc27cea" category="paragraph">您可以使用NetApp控制台存取卷宗快取選項。</block>
+  <block id="8e917942a77709dfd28c155f42a97553" category="inline-link">了解有關登入的更多信息</block>
+  <block id="acca0538f1851a14dc6ee2d63f1533a9" category="paragraph">若要登入NetApp控制台，您可以使用NetApp支援網站憑證。<block ref="83012c4a40bb3321733997744c83daa9" category="inline-link-rx"></block> 。</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
+  <block id="8859695a85afcf4d196795433a572988" category="inline-link">NetApp控制台</block>
+  <block id="205d84b6377f703c3dad4c8973e9f9fe" category="list-text">開啟 Web 瀏覽器並前往<block ref="729bc7d8b8964e56d3f2c909ebee01e1" category="inline-link-rx"></block>。</block>
+  <block id="0daac1b9cd4c3a240bf2f6b44ba178a1" category="paragraph">出現NetApp控制台登入頁面。</block>
+  <block id="4a43cddfeeabba4570c14c252dec0bd1" category="list-text">登入控制台。</block>
+  <block id="685bf0c6938aac694b7f715ca5ab7594" category="list-text">從控制台左側導覽中，選擇*移動性*&gt;*卷快取*。</block>
+  <block id="e9d0563880c518332c5657bb388dc935" category="inline-image-macro">磁碟區快取登陸頁的圖片</block>
+  <block id="575a3014ec6abcbafb4ee878f15c2659" category="paragraph">出現卷宗緩存儀表板。<block ref="1d5ddc4a04ccc8130b7d403f1b6e6b88" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d29462a6f3d69287d617ba8e6d5e1f25" category="inline-link-macro">設定卷緩存</block>
+  <block id="9aa0485090e68790cb76e5d3be940fcf" category="admonition">如果未設定控制台代理，則會出現選項「新增控制台代理」。請參閱<block ref="041a8dd494e8c29eb6f2a25bc2aba9af" category="inline-link-macro-rx"></block> 。</block>
+  <block id="c8af4e66767b2c892a94c205333ff750" category="summary">透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的支援來開始使用磁碟區快取。</block>
+  <block id="783400bbca91266f6f919a9d8401a790" category="doc">磁碟區快取先決條件</block>
+  <block id="84804abf3404a430e85ae3299587a6b0" category="paragraph">首先驗證您的操作環境、登入、網路存取和 Web 瀏覽器是否已準備就緒。</block>
+  <block id="56df6cb020427fdcc7046462d2a74484" category="paragraph">要使用卷緩存，您應該確保您的環境滿足所有要求。</block>
+  <block id="9e25219bfef39dc2d94805b599244f8d" category="list-text">ONTAP 9.8 及更高版本</block>
+  <block id="6bc8ee47a10f11a50d1b88f0e1669fee" category="list-text">叢集管理員ONTAP權限</block>
+  <block id="bb2db94d282af73e9408b243f1158770" category="list-text">集群上的集群間 LIF</block>
+  <block id="b0bec4e694abbf7d9f8eab802a66698d" category="list-text">在NetApp控制台中：</block>
+  <block id="69b085a23d3ed85c84455b9288792bf2" category="inline-link">BlueXP快速入門</block>
+  <block id="91e534d044a3d9c6a1c8575f89e73c9b" category="inline-link">了解控制台代理</block>
+  <block id="e2a5fa776bf988cfa9dbfb9f02da9619" category="list-text">需要在NetApp控制台中設定控制台代理程式。所有來源集群和目標集群必須位於同一個控制台代理上。請參閱<block ref="4b1866f17dc6bd66f88d9d6839084df6" category="inline-link-rx"></block>和<block ref="be47360914e9c5a32b9a06216cb3cec0" category="inline-link-rx"></block>。</block>
+  <block id="1644e8c8713b99aa2a509321e1b03ba5" category="list-text">應設置工作環境。</block>
+  <block id="c58af1fa22ce44dd1a1025cb0f4b05f2" category="list-text">應將叢集新增至目標工作環境中，並使其處於開啟或降級狀態。</block>
+  <block id="70409a142107b4016b7ef004178c29d8" category="inline-link">NetApp控制台需求</block>
+  <block id="bed786cbf4ab55e1445650548602862c" category="list-text">標準NetApp控制台要求。參考<block ref="2fae4ce1ffb16d5bf2c9555180b86caf" category="inline-link-rx"></block>。</block>
+  <block id="fe8a9d57951a636664c54f5cf14a06e1" category="summary">只需幾個步驟即可開始使用磁碟區快取。</block>
+  <block id="cd7075003264e6a8e9370e8f19275492" category="doc">卷快取快速啟動</block>
+  <block id="7f9fe4f52eb64124e68264f256f36881" category="paragraph">以下是開始使用磁碟區快取所需步驟的概述。每個步驟中的連結都會將您帶到提供更多詳細資訊的頁面。</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
+  <block id="a2d56436fc6737079209e6c74380c5fb" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>審查先決條件</block>
+  <block id="d73fd850784e1d8dbda69ab3ca51e7cf" category="inline-link-macro">確保您的環境符合這些要求</block>
+  <block id="8aa6fa53d4ea5eb2e6cf7864a0814952" category="paragraph"><block ref="6d00d645d4db26355e2a4b6e5ebcd192" category="inline-link-macro-rx"></block> 。</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
+  <block id="774adf0706578efe4197e79fc434cdf3" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>設定卷緩存</block>
+  <block id="c5265a2111872d8a36af35ac9df5bd6a" category="inline-link-macro">設定卷緩存</block>
+  <block id="35b195de89ecea9ff719e6aa5e3eeccf" category="paragraph"><block ref="1969983886bb9c72f05c6ce62e307cc3" category="inline-link-macro-rx"></block> 。</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
+  <block id="fb35cdd7029fec15aadbdddd879fa161" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>下一步是什麼？</block>
+  <block id="d2b78bb589121de795035bc504cc0150" category="paragraph">以下是您接下來可以做的事情。</block>
+  <block id="15a05e063d4c5c1c840a1358ea5e2f1a" category="inline-link-macro">創建快取</block>
+  <block id="6d8c022b864e0ac2a0521e01b0a148ef" category="list-text"><block ref="08994cd66141241fcfdbc13ed0e82eff" category="inline-link-macro-rx"></block> 。</block>
+  <block id="36d2dfb130cc56d5eda3b8749b5bd6df" category="inline-link-macro">管理快取、編輯快取、調整快取大小或刪除緩存</block>
+  <block id="7feb77d14601611c1fbc66f8aea36e7b" category="list-text"><block ref="06832ac35077da45cc1af571e236bfcd" category="inline-link-macro-rx"></block> 。</block>
+  <block id="d5478d6eec7f9909d140c5c5dc7b8049" category="inline-link-macro">監控卷快取操作</block>
+  <block id="3a4d754d0c4ec1d71c54dc063043088b" category="list-text"><block ref="1f92bc5779f2f7dc3b853d4a9f3506c9" category="inline-link-macro-rx"></block> 。</block>
+  <block id="8272cbc57a0f666d4fb3501b0d6d1f56" category="summary">若要使用磁碟區緩存，請執行幾個步驟進行設定。</block>
+  <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">先決條件</block>
+  <block id="28afabf1cd8784eb84b3926b994169ea" category="list-text">審查<block ref="c6b48cc2d47e2f989af724d3298e55c0" category="inline-link-macro-rx"></block>以確保您的環境已準備就緒。</block>
+  <block id="3847705074d8f4f4a3ad3b8e472e4a7c" category="list-text">建立控制台代理。</block>
+  <block id="6933f6b443b103ffc6df5f0c40cf6114" category="list-text">建立可以支援磁碟區快取的系統。</block>
+  <block id="01f52dd5b9c3fcf42a482c9c21f24432" category="section-title">在NetApp控制台中建立控制台代理</block>
+  <block id="f7b8941f69c5e6de95c2c5651f12e340" category="paragraph">下一步是在NetApp控制台中建立控制台代理程式。</block>
+  <block id="368b569705fc2b4a6ccbd31e2dddc770" category="inline-link">如何建立控制台代理</block>
+  <block id="3a0d8363f9a5b119c844e8e4b624f5d8" category="paragraph">要在使用卷宗快取之前建立控制台代理，請參閱NetApp控制台文檔，其中介紹了<block ref="2d846d70ffa1be89a4045faa3f83584f" category="inline-link-rx"></block>。</block>
+  <block id="f46a3c01f849eec231a129ff7cb55f02" category="section-title">創建系統</block>
+  <block id="2dc0e2079607a1629e0ad455c80fed71" category="paragraph">如果您還沒有這樣做，您需要為來源和目標建立系統。</block>
+  <block id="5df55e7de34e04e3fbd5d9ffd4e44939" category="inline-link">建立Amazon FSx for ONTAP系統</block>
+  <block id="16294c836385c080dfc02e110cdfc625" category="list-text"><block ref="16294c836385c080dfc02e110cdfc625" category="inline-link-rx"></block></block>
+  <block id="a3272fd5c4bd1903de9b1b2f5e1665a8" category="inline-link">在 AWS 中啟動Cloud Volumes ONTAP</block>
+  <block id="5fc68dd6c2f9e8f9867008288922972c" category="list-text"><block ref="5fc68dd6c2f9e8f9867008288922972c" category="inline-link-rx"></block></block>
+  <block id="70c84621a7336f391b4b7df86b5f1396" category="inline-link">在 Azure 中啟動Cloud Volumes ONTAP</block>
+  <block id="382c836de95fd7a0d956bd916d408106" category="list-text"><block ref="382c836de95fd7a0d956bd916d408106" category="inline-link-rx"></block></block>
+  <block id="ce3503849689227dd8014f8ed3f5cb5e" category="inline-link">在 GCP 啟動Cloud Volumes ONTAP</block>
+  <block id="b1fc335b745b5be1ddedded19d077bf9" category="list-text"><block ref="b1fc335b745b5be1ddedded19d077bf9" category="inline-link-rx"></block></block>
+  <block id="6c0fb6078ec778ca2319e375a19e994b" category="inline-link">新增現有的Cloud Volumes ONTAP系統</block>
+  <block id="c10b8a77856c1097f8b3038f1bfab45b" category="list-text"><block ref="c10b8a77856c1097f8b3038f1bfab45b" category="inline-link-rx"></block></block>
+  <block id="a1ebf612d281c8e7fb16bbfa253b9627" category="inline-link">發現ONTAP集群</block>
+  <block id="49aaf65c31a811a37b2627a951f6f6d2" category="list-text"><block ref="49aaf65c31a811a37b2627a951f6f6d2" category="inline-link-rx"></block></block>
+  <block id="ff45d71e69fb5930de79de7c94326d7b" category="doc">卷緩存</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供對版權聲明、商標、專利等的存取。</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NETAPP、NETAPP 標誌和NetApp商標頁面上列出的標誌是NetApp, Inc. 的商標。其他公司和產品名稱可能是其各自所有者的商標。</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">專利</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp擁有的專利的最新清單可在以下位置找到：</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隱私權政策</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開源</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有關NetApp軟體中使用的第三方版權和許可的資訊。</block>
+  <block id="84fa68bdcea2ad5e54b20ac851705b19" category="summary">已知限制標識了此版本服務不支援或無法與其正確互通的平台、裝置或功能。</block>
+  <block id="b0869ac252941f2bb0a66e4217373fe7" category="doc">卷快取的已知限制</block>
+  <block id="b4c367fe6d90350394d4c683b14a2b68" category="section-title">複製快取導出策略規則的限制</block>
+  <block id="dfa00fa3b7488ec5be323d610b3be4c9" category="paragraph">在以下情況下，快取匯出策略規則不會複製到快取磁碟區：</block>
+  <block id="052790f586ecc27268f7e78d289d66ec" category="list-text">當來源磁碟區的系統是Amazon FSx for NetApp ONTAP或Cloud Volumes ONTAP，且快取磁碟區是ONTAP 9.10.1 或更早版本。</block>
+  <block id="63dfadbcf19bd5ee84631f7d0fa52f99" category="list-text">當來源磁碟區的系統是任意版本的ONTAP，且快取磁碟區是ONTAP 9.10.1 或更早版本。</block>
+  <block id="55f772a03fa49d374be9b2bcd7e6a76b" category="paragraph">解決方法：您應該手動建立快取卷的規則。</block>
+  <block id="fa3ee1290aad0baa7d9f67b33fe9f498" category="section-title">同名儲存虛擬機器的快取建立失敗</block>
+  <block id="cdfacc99848abb76b047557a358ab3ce" category="paragraph">如果來源叢集和目標叢集使用同名的儲存虛擬機，則不會建立快取。</block>
+  <block id="e5b7c58c64229256ed7ed7b7531a8fb8" category="paragraph">解決方法：對來源儲存虛擬機器和目標儲存虛擬機器使用不同的名稱。</block>
+  <block id="302e36c6612d7b1f818aca18bb48cd98" category="section-title">延遲顯示新的或最近編輯的出口政策</block>
+  <block id="5f46a75755796ecf8fe20992381241f3" category="paragraph">建立快取時，您可能無法在清單中看到最近建立或編輯的匯出策略。</block>
+  <block id="6cd32040ccd84f982a76c0c1d708c66c" category="paragraph">解決方法：幾分鐘後重試。</block>
+  <block id="273053fb1b487fc052d1da115c69e3cd" category="section-title">當目標僅啟用 CIFS 協定時，快取建立失敗</block>
+  <block id="1951eec8941c43bd77fbd0a382f438c5" category="paragraph">如果來源叢集或目標叢集具有ONTAP 9.10.1 或更早版本，且目標叢集僅啟用了 CIFS 協議，則快取建立失敗。</block>
+  <block id="19e9fe5f7892297d60443124d55cc602" category="paragraph">解決方法：使用運行ONTAP 9.11.1 或更高版本的目標集群，或同時配置 CIFS 和 NFS 協定的目標集群。</block>
+  <block id="334fb6e3ccc3d68c66ae1be5bb08809f" category="summary">磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區。您可以使用磁碟區快取來加快資料存取速度或卸載存取頻繁的磁碟區的流量。快取磁碟區非常適合讀取密集型工作負載，尤其是客戶端需要重複存取相同資料的情況。</block>
+  <block id="cfd3e678741802a00293f0cccac9446c" category="doc">磁碟區快取的新功能</block>
+  <block id="802add3126540762ef1a9360d0a57d61" category="paragraph">了解卷緩存的新功能。</block>
+  <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025年10月6日</block>
+  <block id="a6aef5e3bbd8b059764f33a4044e30d6" category="section-title">2023年6月4日</block>
+  <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp以多種方式為BlueXP提供支援。全天候提供廣泛的免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">獲取協助</block>
+  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetApp以多種方式為BlueXP及其雲端服務提供支援。我們提供全天候 (24/7) 的大量免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">獲取雲端提供者文件服務的支持</block>
+  <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">有關雲端提供者文件服務、其基礎設施或使用該服務的任何解決方案的技術支持，請參閱該產品的BlueXP文件中的「取得協助」。</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">適用於ONTAP 的Amazon FSx</block>
+  <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
+  <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
+  <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
+  <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
+  <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">要獲得針對BlueXP及其儲存解決方案和服務的技術支持，請使用下面所述的支援選項。</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自助選項</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">這些選項每週 7 天、每天 24 小時免費提供：</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文件</block>
+  <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">您目前正在檢視的BlueXP文件。</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知識庫</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">搜尋BlueXP知識庫以尋找有助於解決問題的文章。</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">社群</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">加入BlueXP社群以關注正在進行的討論或創建新的討論。</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">向NetApp支援建立案例</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述自助支援選項之外，您還可以在啟動支援後與NetApp支援專家合作解決任何問題。</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="list-title">開始之前</block>
+  <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">了解如何管理與BlueXP登入相關的憑證</block>
+  <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">若要使用「建立案例」功能，您必須先將您的NetApp支援網站憑證與您的BlueXP登入名稱關聯。<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block> 。</block>
+  <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">如果您要為具有序號的ONTAP系統開啟案例，那麼您的 NSS 帳戶必須與該系統的序號相關聯。</block>
+  <block id="7fe6981833e8fe7fd89e0a99a55573da" category="list-text">在BlueXP中，選擇 *幫助 &gt; 支持*。</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在「*資源*」頁面上，選擇「技術支援」下的可用選項之一：</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">如果您想透過電話與某人交談，請選擇「致電我們」。您將被引導至 netapp.com 上的一個頁面，其中列出了您可以撥打的電話號碼。</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">選擇「建立案例」向NetApp支援專家開立一張票：</block>
+  <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服務*：選擇與問題相關的服務。例如， BlueXP專門針對服務中的工作流程或功能的技術支援問題。</block>
+  <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作環境*：如果適用於存儲，請選擇* Cloud Volumes ONTAP* 或 *On-Prem*，然後選擇相關的工作環境。</block>
+  <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">工作環境清單屬於您在服務頂部橫幅中所選的BlueXP組織（或帳戶）、專案（或工作區）和連接器的範圍內。</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*個案優先級*：選擇個案的優先級，可以是低、中、高或嚴重。</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">要了解有關這些優先事項的更多詳細信息，請將滑鼠懸停在欄位名稱旁邊的資訊圖示上。</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*問題描述*：提供問題的詳細描述，包括任何適用的錯誤訊息或您執行的故障排除步驟。</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*其他電子郵件地址*：如果您想讓其他人知道此問題，請輸入其他電子郵件地址。</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*附件（選購）*：一次最多上傳五個附件。</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每個附件檔案大小限制為 25 MB。支援以下檔案副檔名：txt、log、pdf、jpg/jpeg、rtf、doc/docx、xls/xlsx 和 csv。</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">建立案例表單的螢幕截圖，可讓您向NetApp支援建立案例。</block>
+  <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成後</block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">將會出現一個彈出窗口，其中顯示您的支援案例編號。NetApp支援專家將審查您的案例並儘快回覆您。</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">若要查看支援案例的歷史記錄，您可以選擇*設定&gt;時間軸*並尋找名為「建立支援案例」的操作。最右邊的按鈕可讓您展開操作以查看詳細資訊。</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">嘗試建立案例時，您可能會遇到以下錯誤訊息：</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">“您無權針對所選服務建立案例”</block>
+  <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">此錯誤可能表示 NSS 帳戶及其關聯的記錄公司與BlueXP帳戶序號的記錄公司不是同一家（即。960xxxx）或工作環境序號。您可以使用以下選項之一尋求協助：</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">使用產品內聊天</block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">提交非技術案例<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">管理您的支援案例（預覽）</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">您可以直接從BlueXP查看和管理活動和已解決的支援案例。您可以管理與您的 NSS 帳戶和公司相關的案例。</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">案例管理目前可作為預覽版。我們計劃在即將發布的版本中完善這種體驗並增加增強功能。請使用產品內聊天向我們發送回饋。</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">請注意以下事項：</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">頁面頂部的案例管理儀表板提供兩種視圖：</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">左側視圖顯示了您提供的使用者 NSS 帳戶在過去 3 個月內開啟的案件總數。</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">右側的視圖根據您的使用者 NSS 帳戶顯示了過去 3 個月內貴公司層級開設的案件總數。</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">表中的結果反映了與您選擇的視圖相關的案例。</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">您可以新增或刪除感興趣的列，並且可以過濾優先順序和狀態等列的內容。其他欄位僅提供排序功能。</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">請查看以下步驟以了解更多詳細資訊。</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">在每個案件級別，我們提供更新案件記錄或關閉尚未關閉或待關閉狀態的案件的功能。</block>
+  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">選擇*案例管理*，如果出現提示，請將您的 NSS 帳戶新增至BlueXP。</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">*案例管理*頁面顯示與您的BlueXP使用者帳戶相關的 NSS 帳戶相關的未結案例。這與出現在 *NSS 管理* 頁面頂部的 NSS 帳戶相同。</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">（可選）修改表中顯示的資訊：</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">在「組織的案例」下，選擇「查看」以查看與您的公司相關的所有案例。</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">透過選擇精確的日期範圍或選擇不同的時間範圍來修改日期範圍。</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">案例管理頁面表格上方選項的螢幕截圖，可讓您選擇確切的日期範圍或過去 7 天、30 天或 3 個月。</block>
+  <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">過濾列的內容。</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">狀態列中的篩選選項的螢幕截圖，可讓您篩選出符合特定狀態（例如「活動」或「已關閉」）的案例。</block>
+  <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">表格中出現的加號圖標</block>
+  <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">透過選擇<block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block>然後選擇您想要顯示的列。</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">螢幕截圖顯示了您可以在表格中顯示的列。</block>
+  <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">表格最後一列出現的帶有三個點的圖標</block>
+  <block id="348552521b849746260fe8d296d34c15" category="list-text">透過選擇管理現有案例<block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block>並選擇其中一個可用選項：</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*查看案例*：查看有關特定案例的完整詳細資訊。</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*更新案例說明*：提供有關您的問題的更多詳細信息，或選擇*上傳文件*以附加最多五個文件。</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*結案*：提供有關結案原因的詳細信息，然後選擇*結案*。</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕截圖顯示了選擇表格最後一列的選單後可以採取的動作。</block>
+  <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="243263104c829e77835d632f591230d5" category="summary">在向NetApp技術支援部門提交支援案例之前，您需要在BlueXP新增一個NetApp支援網站帳戶，然後註冊以獲得支援。</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以獲得支持</block>
+  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">需要註冊支援才能獲得針對BlueXP及其儲存解決方案和服務的技術支援。還需要支援註冊才能啟用Cloud Volumes ONTAP系統的關鍵工作流程。</block>
+  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">註冊支援並不能使NetApp獲得雲端提供者文件服務的支援。有關雲端提供者文件服務、其基礎設施或使用該服務的任何解決方案的技術支持，請參閱該產品的BlueXP文件中的「取得協助」。</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支援註冊概述</block>
+  <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">啟動支持權利的註冊方式有兩種：</block>
+  <block id="29360bfcdbc91d3f1514c372b4585965" category="list-text">註冊您的BlueXP帳號序號（您的 20 位 960xxxxxxxxxxxx 序號位於BlueXP中的支援資源頁面上）。</block>
+  <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">這是您在BlueXP內任何服務的單一支援訂閱 ID。每個BlueXP帳號級支援訂閱都必須註冊。</block>
+  <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在您的雲端供應商市場中註冊與訂閱相關的Cloud Volumes ONTAP序號（這些是 20 位元 909201xxxxxxxx 序號）。</block>
+  <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">這些序號通常被稱為_PAYGO 序號_，由BlueXP在Cloud Volumes ONTAP部署時產生。</block>
+  <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">註冊兩種類型的序號可以實現開立支援票和自動產生案例等功能。按照如下所述，透過將NetApp支援網站 (NSS) 帳戶新增至BlueXP來完成註冊。</block>
+  <block id="444b74bc81e823cc1c4c704219ad8ed3" category="section-title">註冊BlueXP以獲得NetApp支持</block>
+  <block id="b3bf31f8a918c712f26cdf493a908825" category="paragraph">若要註冊支援並啟動支援權利，您的BlueXP組織（或帳戶）中的使用者必須將NetApp支援網站帳號與其BlueXP登入名稱關聯。如何註冊NetApp支援取決於您是否已經擁有NetApp支援網站 (NSS) 帳號。</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">擁有 NSS 帳戶的現有客戶</block>
+  <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">如果您是擁有 NSS 帳戶的NetApp客戶，只需透過BlueXP註冊即可獲得支援。</block>
+  <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">在BlueXP控制台的右上角，選擇「設定」圖標，然後選擇「*憑證*」。</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">選擇*使用者憑證*。</block>
+  <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">選擇*新增 NSS 憑證*並依照NetApp支援網站 (NSS) 驗證提示進行操作。</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">若要確認註冊過程是否成功，請選擇「幫助」圖標，然後選擇「*支援*」。</block>
+  <block id="2ba7f9eae7a02f9c3ac0fc07517d1c48" category="paragraph">*資源*頁面應顯示您的BlueXP組織已註冊以獲得支援。</block>
+  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">螢幕截圖顯示了帳戶序號、綠色複選框和文字「已註冊支援」。</block>
+  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c05e530d1466e986d570cfe3f92656c3" category="paragraph">請注意，如果其他BlueXP用戶尚未將NetApp支援網站帳戶與其BlueXP登入名稱關聯，他們將看不到相同的支援註冊狀態。但是，這並不意味著您的BlueXP組織沒有註冊支援。只要組織中的一名使用者遵循了這些步驟，那麼您的組織就已註冊。</block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">現有客戶但沒有 NSS 帳戶</block>
+  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是現有的NetApp客戶，擁有現有授權和序號但沒有 NSS 帳戶，則需要建立 NSS 帳戶並將其與您的BlueXP登入關聯。</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp支援網站使用者註冊表</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">透過完成以下操作建立NetApp支援網站帳戶<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">請務必選擇適當的使用者級別，通常為* NetApp客戶/最終使用者*。</block>
+  <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">請務必複製上面用於序號欄位的BlueXP帳戶序號 (960xxxx)。這將加快帳戶處理速度。</block>
+  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">完成以下步驟，將您的新 NSS 帳戶與您的BlueXP登入名稱關聯<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp全新產品</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp新使用者且沒有 NSS 帳戶，請依照下列步驟操作。</block>
+  <block id="d889e6e7cc4c5509ab5b37f8fc894e46" category="list-text">在BlueXP控制台的右上角，選擇「幫助」圖標，然後選擇「*支援*」。</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">幫助選單的螢幕截圖，其中支援是第一個選項</block>
+  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">從支援註冊頁面找到您的帳戶 ID 序號。</block>
+  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp 的支援註冊網站</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">導航至<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block>並選擇*我不是註冊的NetApp客戶*。</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">填寫必填欄位（帶有紅色星號的欄位）。</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">在*產品線*欄位中，選擇*雲端管理員*，然後選擇適用的計費提供者。</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">從上面的步驟 2 複製您的帳戶序號，完成安全性檢查，然後確認您已閱讀 NetApp 的全球資料隱私政策。</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">一封電子郵件會立即發送到提供的郵箱以完成此安全交易。如果幾分鐘內沒有收到驗證電子郵件，請務必檢查您的垃圾郵件資料夾。</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">從電子郵件中確認操作。</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">確認向NetApp提交您的請求並建議您建立NetApp支援網站帳戶。</block>
+  <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">請務必複製上面用於序號欄位的帳戶序號（960xxxx）。這將加快處理速度。</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp應該在過程中與您聯繫。這是針對新用戶的一次性入職培訓。</block>
+  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">擁有NetApp支援網站帳號後，請依照下列步驟將帳號與您的BlueXP登入關聯<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">關聯 NSS 憑證以獲得Cloud Volumes ONTAP支持</block>
+  <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">需要將NetApp支援網站憑證與您的BlueXP組織關聯才能為Cloud Volumes ONTAP啟用以下關鍵工作流程：</block>
+  <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">註冊即用即付Cloud Volumes ONTAP系統以獲得支持</block>
+  <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">需要提供您的 NSS 帳戶才能啟動對您的系統的支援並獲得NetApp技術支援資源的存取權限。</block>
+  <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">自帶授權 (BYOL) 時部署Cloud Volumes ONTAP</block>
+  <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">需要提供您的 NSS 帳戶，以便BlueXP可以上傳您的許可證金鑰並啟用您購買的期限的訂閱。這包括期限續訂的自動更新。</block>
+  <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">將Cloud Volumes ONTAP軟體升級至最新版本</block>
+  <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">將 NSS 憑證與您的BlueXP組織關聯與與BlueXP使用者登入關聯的 NSS 帳戶不同。</block>
+  <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">這些 NSS 憑證與您的特定BlueXP組織 ID 相關聯。屬於BlueXP組織的使用者可以從 *支援 &gt; NSS 管理* 存取這些憑證。</block>
+  <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您有客戶級帳戶，則可以新增一個或多個 NSS 帳戶。</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您有合作夥伴或經銷商帳戶，則可以新增一個或多個 NSS 帳戶，但不能與客戶級帳戶一起新增。</block>
+  <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">選擇*NSS 管理 &gt; 新增 NSS 帳號*。</block>
+  <block id="85b9386ed443776127e099931d73448a" category="list-text">當出現提示時，選擇「*繼續*」以重新導向至 Microsoft 登入頁面。</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp使用 Microsoft Entra ID 作為特定於支援和授權的身份驗證服務的身份提供者。</block>
+  <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登入頁面，提供您的NetApp支援網站註冊的電子郵件地址和密碼以執行驗證程序。</block>
+  <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">這些操作使BlueXP能夠使用您的 NSS 帳戶進行許可證下載、軟體升級驗證和未來支援註冊等操作。</block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS 帳戶必須是客戶級帳戶（不是訪客或臨時帳戶）。您可以擁有多個客戶級 NSS 帳戶。</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">如果該帳戶是合作夥伴等級帳戶，則只能有一個 NSS 帳戶。如果您嘗試新增客戶級 NSS 帳戶且合作夥伴級帳戶已存在，您將收到以下錯誤訊息：</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">“此帳戶不允許使用 NSS 客戶類型，因為已經存在不同類型的 NSS 用戶。”</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">如果您已有客戶級 NSS 帳戶並嘗試新增合作夥伴級帳戶，情況也是如此。</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">成功登入後， NetApp將儲存 NSS 使用者名稱。</block>
+  <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">三個水平點的圖標</block>
+  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">這是系統產生的映射到您的電子郵件的 ID。在*NSS 管理*頁面上，您可以顯示來自<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>菜單。</block>
+  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">如果您需要刷新登入憑證令牌，還有一個*更新憑證*選項<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>菜單。</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">使用此選項會提示您再次登入。請注意，這些帳戶的令牌將在 90 天後過期。我們將發布通知來提醒您此事。</block>
+  <block id="cb949e5e30304d14de6d1ee56dcd3973" category="doc">使用卷緩存創建緩存</block>
+  <block id="c83432b66d6c3940b6259b90efd83298" category="paragraph">磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區。您可以使用磁碟區快取來加快資料存取速度或卸載存取頻繁的磁碟區的流量。快取磁碟區非常適合讀取密集型工作負載，尤其是客戶端需要重複存取相同資料的情況。您可以在Amazon FSx for ONTAP、 Cloud Volumes ONTAP和本機ONTAP之間建立磁碟區緩存，並使用來源系統中的一個或多個來源磁碟區作為快取來源。然後，為快取磁碟區選擇儲存虛擬機器。</block>
+  <block id="169359b747a97bfd7be9db6b4d0d4205" category="paragraph">快取磁碟區可以與來源磁碟區位於同一群集或不同的叢集上。您選擇快取的磁碟區必須屬於同一個儲存虛擬機，且儲存虛擬機必須使用相同的協定。</block>
+  <block id="40d1cd0fd7b32697fca346c77e81cf33" category="admonition">如果磁碟區不符合快取條件，它們將顯示為灰色，以便您無法選擇它們。</block>
+  <block id="84c72eda7eeb786f006b0900a7567aaa" category="paragraph">您可以輸入快取磁碟區的大小作為來源磁碟區大小的百分比。</block>
+  <block id="597e414794682881f404bfa784ae39ec" category="admonition">快取磁碟區使用的 IPSpace 取決於來源儲存虛擬機器所使用的 IPSpace。</block>
+  <block id="517fe4990606388caa9919da8eec995a" category="paragraph">快取卷名稱使用後綴<block ref="2688da00ef40aea51d0332942162f4a3" prefix=" " category="inline-code"></block>新增到原始磁碟區名。</block>
+  <block id="da3e6c365dbf585e680eb8b81eca08c1" category="section-title">磁碟區快取登入頁面的步驟</block>
+  <block id="83046549bdfbacafb1888d0467d8acc4" category="list-text">登入NetApp控制台。</block>
+  <block id="c0e9cf3396419d44afe6a2a9716d16ce" category="list-text">從左側導覽中選擇*移動性*&gt;*卷快取*。</block>
+  <block id="d76534bd050ff0fb764f735590f47e67" category="paragraph">您將進入卷宗緩存儀表板頁面。當您第一次啟動磁碟區快取選項時，您需要新增快取資訊。稍後，儀表板會出現並顯示有關快取的資料。</block>
+  <block id="33022033ab6ef074831b51e61f9f7279" category="inline-link">NetApp控制台快速入門</block>
+  <block id="612e60a0d9bf1ad494a1c96d0cfbb20b" category="admonition">如果您尚未設定NetApp控制台代理，則會出現選項 *新增控制台代理*，而不是 *新增快取*。在這種情況下，您需要先設定控制台代理。請參閱<block ref="4af1c1682eadbae660c367784adca2e0" category="inline-link-rx"></block>。</block>
+  <block id="6eadae9a38db2a500243d05cf7225e2e" category="inline-image-macro">磁碟區快取的登入頁面</block>
+  <block id="382f9d7006d270e738cb792422ddc921" category="paragraph"><block ref="382f9d7006d270e738cb792422ddc921" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b6818d152d5cb9dea3c8907b154bd8a8" category="list-text">選擇*新增快取*。</block>
+  <block id="9a4dcefe0ee384ac688c636910b45efa" category="list-text">在快取資料頁面中，選擇系統來源和目標緩存，然後選擇*啟動快取精靈*。</block>
+  <block id="9e0cbc47bdb380a02c337c21c69cdc2b" category="list-text">在配置快取頁面中，選擇要快取的一個或多個磁碟區。</block>
+  <block id="09fd28ad516783a6436e73dab10d6a64" category="admonition">您最多可以選擇 50 卷。</block>
+  <block id="ec2f9f6a3579c539c02d2b9771c2e706" category="list-text">向下捲動頁面以對虛擬機器詳細資料或磁碟區大小進行其他變更。</block>
+  <block id="9ed9532712efe61b4d49f6ee57e4e286" category="list-text">輸入快取磁碟區的大小（佔來源磁碟區大小的百分比）。</block>
+  <block id="3e6ea85d3cbf80a51076780cb179a997" category="admonition">一個好的經驗法則是快取卷大小應為來源磁碟區大小的 15% 左右。</block>
+  <block id="5af43b0eab69da24bc5edcd7ac5f1937" category="list-text">選取「*快取存取*」方塊以將 NFS 匯出政策規則和 SMB/CIFS 共用配置從來源磁碟區複製到目標快取磁碟區。</block>
+  <block id="c21540a74f6806b42af13022fc111de8" category="paragraph">然後，來源磁碟區中的 NFS 匯出策略規則和 SMB/CIFS 共用將複製到快取磁碟區。如果快取儲存虛擬機器上未啟用 SMB/CIFS 協議，則 SMB/CIFS 共用將不會複製。</block>
+  <block id="220be7f31b8f92d82ed95eaf85ccf0ec" category="list-text">（可選）輸入快取名稱前綴。</block>
+  <block id="6b9f55d4a5933f878016b2b86fd6cd1b" category="paragraph">後綴<block ref="2688da00ef40aea51d0332942162f4a3" prefix=" " category="inline-code"></block>附加到名稱的格式如下：<block ref="edd672ffe3522f8c8dfc35e6b57e3ae7" prefix=" " category="inline-code"></block></block>
+  <block id="152c1205ce3ae813313f8a14cf8eb321" category="list-text">選擇*建立快取*。</block>
+  <block id="fda3cce0ad94905cc7b862e48ea5b42f" category="paragraph">新的快取出現在快取清單中。快取卷名稱將顯示<block ref="2688da00ef40aea51d0332942162f4a3" prefix=" " category="inline-code"></block>作為來源磁碟區名稱的字尾。</block>
+  <block id="1a594c580595e3ee20d748a365fef6b2" category="list-text">若要查看操作進度，請從NetApp控制台選單中選擇 *管理* &gt; *審核*。</block>
+  <block id="8269bed4632d147abc4be61b23aac8cf" category="section-title">NetApp控制台系統頁面中的步驟</block>
+  <block id="01287fab159faf3ef13872bbbba03167" category="list-text">從NetApp控制台系統頁面中，選擇工作環境。</block>
+  <block id="2988cd54e7f1bab926c1e27b0d343509" category="inline-image-macro">拖放功能來建立緩存</block>
+  <block id="611242e7b2f5e67d2d0f069f8b963154" category="list-text">選擇來源系統並將其拖曳到目標。<block ref="43270a96c615e76b6743757f308ade69" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d85bdc4472b38b29e128ffbb6d19168e" category="list-text">選擇*卷緩存*。</block>
+  <block id="eb3419d769eb00d7ba2ca8edb7c0e426" category="paragraph">這將建立從來源到目標的快取磁碟區。</block>
+  <block id="8d7482a9da637c0f0bd4285bb630335c" category="list-text">在右側窗格中的「快取」選項方塊中，選擇「*新增*」。</block>
+  <block id="73e208b68018b847762d82de940a4e26" category="inline-image-macro">快取資料彈出窗口</block>
+  <block id="9da3caf8f0b3db72ac3ea62b14519fc6" category="list-text">在快取資料頁面中，選擇要快取的系統，然後選擇*啟動快取精靈*。<block ref="d510d73c5ccacdf7416f6e10c36fb683" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5c334f4127a136baabcc22d3670432c3" category="inline-image-macro">添加快取的視窗</block>
+  <block id="a634ad960f381760e39578135c141f12" category="paragraph"><block ref="a634ad960f381760e39578135c141f12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="666d3c7d6ea7cfc7ea6e6e6faed1cdd3" category="doc">管理快取</block>
+  <block id="fc66df463880523a60b999aff387392a" category="paragraph">您可以編輯快取、更改匯出策略、調整快取大小以及刪除快取。</block>
+  <block id="8068c771c79b687b4eb16a0852ccf0b4" category="paragraph">利用卷緩存，您可以實現以下目標：</block>
+  <block id="00ac51c16cde551605ec6cf0d3b91416" category="list-text">查看快取詳細資訊。</block>
+  <block id="06fc18e5e4898299f1a818098e8e94c7" category="list-text">為快取分配不同的導出策略。</block>
+  <block id="8ba82ac05e167f153ba79532f2f1980a" category="list-text">編輯卷快取並更改其大小等。編輯將有查看和更改其他屬性的選項，並將在即將發布的版本中添加更多屬性。</block>
+  <block id="b8c0701847f6b5a25da10d75bdbcba97" category="list-text">根據原始磁碟區大小的百分比調整現有快取的大小。</block>
+  <block id="e33b91d9e0fc1cfb3b1e4c432687e47d" category="list-text">刪除緩存。</block>
+  <block id="eed3d8fba58a64cd23112120a6117455" category="section-title">查看快取詳細信息</block>
+  <block id="5c69ebc5320400eed666c78803db34a8" category="paragraph">對於每個緩存，您可以看到原始磁碟區、工作環境、快取磁碟區等。</block>
+  <block id="5956b4d692699189d6894540b730139f" category="list-text">從NetApp控制台左側導覽中，選擇 *Mobility* &gt; *Volume caching*。</block>
+  <block id="f8e53fb165d8b7a3831ce2aa7d4e77f6" category="paragraph">您可以查看在目標系統上建立的快取磁碟區清單。快取列表顯示快取詳細資訊。</block>
+  <block id="02cefd577af8481ee671be4f9195bbaa" category="list-text">若要過濾列表，請選擇*按+過濾*選項。</block>
+  <block id="c9897a728d224b1031a3e8b6c1f025ae" category="list-text">選擇一行並選擇右側的*操作...*選項。</block>
+  <block id="714df0afd8067aa43e79041c239c6f08" category="list-text">選擇*查看和編輯詳細資訊*。</block>
+  <block id="d120091c5d384d26aa6d9f90d1401035" category="list-text">查看詳細資訊。</block>
+  <block id="5b783fc58734a11a740b6e1e60e08d60" category="section-title">編輯快取</block>
+  <block id="5de1639bcf1d9741c547ce9e690a7ea1" category="paragraph">您可以變更快取的名稱、磁碟區大小和匯出策略。</block>
+  <block id="feed808375e6b93e924213348d6e1b33" category="list-text">在基本配置標籤中，可選擇變更快取名稱和快取磁碟區大小。</block>
+  <block id="f3bd519b868da90fe41b12102022d728" category="list-text">或者，展開「快取存取」選項卡，並修改以下值：</block>
+  <block id="4224fae747c5197aa6015f2364e1af12" category="list-text">掛載路徑。</block>
+  <block id="77cf0358c33e9b52d8fd3920268e696c" category="list-text">與現有出口政策不同的出口政策。</block>
+  <block id="fe33f2f773b6f4f6c83f89169f7da415" category="list-text">若要變更 SMB/CIFS 共用詳細資訊或匯出策略規則，請按一下該選項以存取NetApp系統管理員。</block>
+  <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">選擇*儲存*。</block>
+  <block id="e48096df97c7e7e77282b4b97ee9bd9a" category="section-title">分配不同的快取導出策略</block>
+  <block id="4635bd9ae5cb389a0305a6b8455fa215" category="paragraph">您可以為快取指派不同的匯出策略。</block>
+  <block id="55d1d3e519ab62ebe0a1babb50ae6d72" category="paragraph">來源導出策略規則應應用於目標叢集。</block>
+  <block id="e7ce5893a6e3bdd09c32da72f9a3c69e" category="admonition">您可以將現有的匯出策略指派給快取。您不能更改出口政策規則。如果需要變更匯出策略，可以使用NetApp System Manager。</block>
+  <block id="4d418cdd8812dfcb356166d6eaf269f7" category="list-text">選擇*更改出口政策*。</block>
+  <block id="b580ca1414e0a945196190cbfbc1f75d" category="list-text">選擇要指派給快取的匯出策略。</block>
+  <block id="3085df87f3cd191beb32cd249232f641" category="section-title">調整快取大小</block>
+  <block id="31bb5882b51789d8ff23370b949a73ec" category="paragraph">您可以根據來源磁碟區的百分比變更快取磁碟區的大小。</block>
+  <block id="782635f18c9a4c6e77f10be3b478b27a" category="list-text">選擇*調整大小*。</block>
+  <block id="c108e3ea3f3ec7a419ec6372a3325d79" category="list-text">輸入原始磁碟區大小的新百分比。</block>
+  <block id="423f18c1cd7d2cab76c65e9cbd30b5d2" category="paragraph">快取卷將調整為新的百分比。</block>
+  <block id="8d4c7677b103c84ac6a97f6e946f6380" category="paragraph">如果您不再需要緩存，您可以將其刪除。這將刪除卷緩存關係並刪除目標卷快取。</block>
+  <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">選擇*刪除*。</block>
+  <block id="9b4532069e9bc4e1de3c019493dc5ee0" category="list-text">勾選此方塊。</block>
+  <block id="ee3a3db0422831681fcef5898b4dd24f" category="doc">使用卷宗快取概述</block>
+  <block id="a73bc81b4418cad7550381063b8d4d32" category="paragraph">使用磁碟區緩存，您可以實現以下目標：</block>
+  <block id="086ae240dc59a72dee947da562cf17da" category="list-text"><block ref="638e664503cbc2b4d03651ad48f065e4" category="inline-link-macro-rx"></block> 。</block>
+  <block id="57eaca7fde0d682a5f4bb1194791b589" category="inline-link-macro">更改匯出策略並調整快取大小</block>
+  <block id="403db9049e8fc74fb1c958367db6cfab" category="list-text"><block ref="63c74ca1cdc9ec0d7fd9f52c97b2e161" category="inline-link-macro-rx"></block> 。</block>
+  <block id="2d2bb0bd1efc96e65cb6deaedc742c41" category="list-text"><block ref="58044a3c76af89738ba5bad3bbf696eb" category="inline-link-macro-rx"></block> 。</block>
+  <block id="158812c8336b1e3bf3dba3a26e130f17" category="list-text"><block ref="1f92bc5779f2f7dc3b853d4a9f3506c9" category="inline-link-macro-rx"></block>在NetApp控制台審核頁面上。</block>
+  <block id="08f83993cc2b93af6175018abeb278b0" category="summary">磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區。您可以使用NetApp磁碟區快取來加快資料存取速度或卸載存取頻繁的磁碟區的流量。快取磁碟區非常適合讀取密集型工作負載，尤其是客戶端需要重複存取相同資料的情況。</block>
+  <block id="a047d92e042b55157df7f9db9b86d574" category="doc">在稽核頁面上監控磁碟區快取作業</block>
+  <block id="33c59f81102abcd6c4195719b1b7d1d3" category="paragraph">您可以使用NetApp控制台審核頁面監控所有磁碟區快取作業並確定其進度。</block>
+  <block id="da27a3a4029fc8a5d227b9d73327f99d" category="list-text">從NetApp控制台選單中，選擇 *管理* &gt; *稽核*。</block>
+  <block id="cb7056f588b57ee15c8c6aa56fe4dd4a" category="list-text">（可選）按時間、服務、操作、代理、資源、使用者或狀態進行過濾。</block>
+  <block id="98f385a388036a7afb371f84cd26bc12" category="list-text">探索所有快取和操作。</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始</block>
+  <block id="5afe8b22b287efe43609aa6085efd740" category="sidebar">磁碟區快取的新功能</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速啟動</block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="sidebar">先決條件</block>
+  <block id="32298021301a69db3766a4f82422d5f1" category="sidebar">存取卷宗快取選項</block>
+  <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常問問題</block>
+  <block id="6794961c24c959bbc17a00b15f547b94" category="sidebar">使用卷緩存</block>
+  <block id="27688625d4bfcc77f4f9313d701cbb7d" category="sidebar">監控卷宗快取作業</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格和社區</block>
+  <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp資料服務</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
+  <block id="c46d8c9c80eb4644795b791069b82911" category="sidebar">卷快取文檔</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">發行說明</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">什麼是新的</block>
+  <block id="482723983a4f2af954e36ff41e567451" category="sidebar">已知限制</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識和支持</block>
+</blocks>

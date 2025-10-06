@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: use/monitor-jobs.html 
+keywords: volume caching, NetApp Volume caching 
+summary: 磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區。您可以使用NetApp磁碟區快取來加快資料存取速度或卸載存取頻繁的磁碟區的流量。快取磁碟區非常適合讀取密集型工作負載，尤其是客戶端需要重複存取相同資料的情況。 
+---
+= 在稽核頁面上監控磁碟區快取作業
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用NetApp控制台審核頁面監控所有磁碟區快取作業並確定其進度。
+
+.步驟
+. 從NetApp控制台選單中，選擇 *管理* > *稽核*。
+. （可選）按時間、服務、操作、代理、資源、使用者或狀態進行過濾。
+. 探索所有快取和操作。
+

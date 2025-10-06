@@ -1,0 +1,8 @@
+---
+section: release-notes
+title: 發行說明
+entries:
+- title: 什麼是新的
+  url: "/release-notes/cache-whats-new.html"
+- title: 已知限制
+  url: "/release-notes/cache-limitations.html"

@@ -1,0 +1,16 @@
+---
+section: get-started
+title: 開始
+entries:
+- title: 了解卷緩存
+  url: "/get-started/cache-intro.html"
+- title: 先決條件
+  url: "/get-started/cache-prerequisites.html"
+- title: 快速啟動
+  url: "/get-started/cache-quick-start.html"
+- title: 設定卷緩存
+  url: "/get-started/cache-setup.html"
+- title: 存取卷宗快取選項
+  url: "/get-started/cache-login.html"
+- title: 常問問題
+  url: "/get-started/cache-faq.html"

@@ -1,0 +1,12 @@
+---
+section: use
+title: 使用卷緩存
+entries:
+- title: 使用卷宗快取概述
+  url: "/use/cache-use-overview.html"
+- title: 創建快取
+  url: "/use/cache-create.html"
+- title: 管理快取
+  url: "/use/cache-manage.html"
+- title: 監控卷宗快取作業
+  url: "/use/monitor-jobs.html"

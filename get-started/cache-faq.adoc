@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-faq.html 
+keywords: volume caching faq, caching frequently asked questions 
+summary: 如果您只是想快速找到問題的答案，此常見問題解答可以為您提供協助。 
+---
+= 磁碟區快取常見問題解答
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您只是想快速找到問題的答案，此常見問題解答可以為您提供協助。
+
+*卷宗快取 URL 是什麼？ *對於 URL，在瀏覽器中輸入： https://console.netapp.com/["https://console.netapp.com/"^]造訪BlueXP控制台。
+
+*您需要許可證才能使用卷宗快取嗎？ *不需要NetApp許可證文件 (NLF)。
+
+*如何啟用磁碟區快取？ *磁碟區快取不需要任何啟用。磁碟區快取選項會自動出現在NetApp控制台左側導覽列中。

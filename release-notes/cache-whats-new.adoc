@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: release-notes/cache-whats-new.html 
+keywords: volume caching faq, bluexp, volume caching frequently asked questions 
+summary: 磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區。您可以使用磁碟區快取來加快資料存取速度或卸載存取頻繁的磁碟區的流量。快取磁碟區非常適合讀取密集型工作負載，尤其是客戶端需要重複存取相同資料的情況。 
+---
+= 磁碟區快取的新功能
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+了解卷緩存的新功能。
+
+
+
+== 2025年10月6日
+
+
+
+=== BlueXP volume caching現在是卷緩存
+
+BlueXP volume caching已重新命名為磁碟區快取。
+
+您可以透過選擇「*Mobility*」>「*Volume caching*」從NetApp Console 左側導覽列存取它。
+
+
+
+=== BlueXP現在是NetApp控制台
+
+NetApp控制台建立在增強和重組的BlueXP基礎之上，可在企業級內部和雲端環境中集中管理NetApp儲存和NetApp資料服務，提供即時洞察、更快的工作流程和簡化的管理，並且高度安全且合規。
+
+有關更改的詳細信息，請參閱link:https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetApp控制台發行說明"]。
+
+
+
+== 2023年6月4日
+
+
+
+=== BlueXP volume caching
+
+BlueXP volume caching是ONTAP 9 軟體的功能，它是一種遠端快取功能，可簡化檔案分發，透過將資源靠近使用者和運算資源的位置來減少 WAN 延遲，並降低 WAN 頻寬成本。磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區。您可以使用BlueXP volume caching快取來加快資料存取速度或卸載訪問量大的磁碟區的流量。快取磁碟區非常適合讀取密集型工作負載，尤其是客戶端需要重複存取相同資料的情況。
+
+透過BlueXP volume caching，您可以獲得雲端的快取功能，特別是針對Amazon FSx for NetApp ONTAP、 Cloud Volumes ONTAP和本機工作環境。
+
+link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html["了解有關卷緩存的更多信息"] 。
