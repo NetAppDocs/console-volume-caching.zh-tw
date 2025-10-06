@@ -30,7 +30,7 @@ summary: 磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區�
 對於每個緩存，您可以看到原始磁碟區、工作環境、快取磁碟區等。
 
 .步驟
-. 從NetApp控制台左側導覽中，選擇 *Mobility* > *Volume caching*。
+. 從NetApp Console左側導覽中，選擇 *Mobility* > *Volume caching*。
 +
 您可以查看在目標系統上建立的快取磁碟區清單。快取列表顯示快取詳細資訊。
 
@@ -47,7 +47,7 @@ summary: 磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區�
 您可以變更快取的名稱、磁碟區大小和匯出策略。
 
 .步驟
-. 從NetApp控制台左側導覽中，選擇 *Mobility* > *Volume caching*。
+. 從NetApp Console左側導覽中，選擇 *Mobility* > *Volume caching*。
 . 選擇一行並選擇右側的*操作...*選項。
 . 選擇*查看和編輯詳細資訊*。
 . 在基本配置標籤中，可選擇變更快取名稱和快取磁碟區大小。
@@ -73,7 +73,7 @@ summary: 磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區�
 TIP: 您可以將現有的匯出策略指派給快取。您不能更改出口政策規則。如果需要變更匯出策略，可以使用NetApp System Manager。
 
 .步驟
-. 從NetApp控制台左側導覽中，選擇 *Mobility* > *Volume caching*。
+. 從NetApp Console左側導覽中，選擇 *Mobility* > *Volume caching*。
 . 選擇一行並選擇右側的*操作...*選項。
 . 選擇*更改出口政策*。
 . 選擇要指派給快取的匯出策略。
@@ -87,7 +87,7 @@ TIP: 您可以將現有的匯出策略指派給快取。您不能更改出口政
 您可以根據來源磁碟區的百分比變更快取磁碟區的大小。
 
 .步驟
-. 從NetApp控制台左側導覽中，選擇 *Mobility* > *Volume caching*。
+. 從NetApp Console左側導覽中，選擇 *Mobility* > *Volume caching*。
 . 選擇一行並選擇右側的*操作...*選項。
 . 選擇*調整大小*。
 . 輸入原始磁碟區大小的新百分比。
@@ -104,7 +104,7 @@ TIP: 您可以將現有的匯出策略指派給快取。您不能更改出口政
 如果您不再需要緩存，您可以將其刪除。這將刪除卷緩存關係並刪除目標卷快取。
 
 .步驟
-. 從NetApp控制台左側導覽中，選擇 *Mobility* > *Volume caching*。
+. 從NetApp Console左側導覽中，選擇 *Mobility* > *Volume caching*。
 . 選擇一行並選擇右側的*操作...*選項。
 . 選擇*刪除*。
 . 勾選此方塊。

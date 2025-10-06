@@ -21,11 +21,11 @@ summary: 若要使用磁碟區緩存，請執行幾個步驟進行設定。
 
 
 
-== 在NetApp控制台中建立控制台代理
+== 在NetApp Console中建立控制台代理
 
-下一步是在NetApp控制台中建立控制台代理程式。
+下一步是在NetApp Console中建立控制台代理程式。
 
-要在使用卷宗快取之前建立控制台代理，請參閱NetApp控制台文檔，其中介紹了 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["如何建立控制台代理"^]。
+要在使用卷宗快取之前建立控制台代理，請參閱NetApp Console文檔，其中介紹了 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["如何建立控制台代理"^]。
 
 
 
@@ -36,7 +36,7 @@ summary: 若要使用磁碟區緩存，請執行幾個步驟進行設定。
 * https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["建立Amazon FSx for ONTAP系統"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["在 AWS 中啟動Cloud Volumes ONTAP"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在 Azure 中啟動Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["在 GCP 啟動Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["在 GCP 中啟動Cloud Volumes ONTAP"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["新增現有的Cloud Volumes ONTAP系統"^]
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["發現ONTAP集群"^]
 

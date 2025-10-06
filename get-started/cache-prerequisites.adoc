@@ -22,12 +22,12 @@ summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的
 ** 集群上的集群間 LIF
 
 
-* 在NetApp控制台中：
+* 在NetApp Console中：
 +
-** 需要在NetApp控制台中設定控制台代理程式。所有來源集群和目標集群必須位於同一個控制台代理上。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["BlueXP快速入門"^]和 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["了解控制台代理"^]。
+** 需要在NetApp Console中設定控制台代理程式。所有來源集群和目標集群必須位於同一個控制台代理上。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["BlueXP快速入門"^]和 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["了解控制台代理"^]。
 ** 應設置工作環境。
 ** 應將叢集新增至目標工作環境中，並使其處於開啟或降級狀態。
-** 標準NetApp控制台要求。參考 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["NetApp控制台需求"^]。
+** 標準NetApp Console要求。參考 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["NetApp Console需求"^]。
 
 
 
