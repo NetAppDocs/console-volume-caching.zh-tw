@@ -17,6 +17,5 @@ summary: 磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區�
 * link:../use/cache-create.html["創建快取"] 。
 * link:../use/cache-manage.html#view-cache-details["查看快取詳細信息"] 。
 * link:../use/cache-manage.html#assign-a-different-cache-export-policy["更改匯出策略並調整快取大小"] 。
-* link:../use/cache-manage.html#delete-a-volume-cache["刪除快取"] 。
 * link:../use/monitor-jobs.html["監控卷快取操作"]在NetApp Console審核頁面上。
 

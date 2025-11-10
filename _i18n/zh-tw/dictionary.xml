@@ -126,7 +126,6 @@
   <block id="c10b8a77856c1097f8b3038f1bfab45b" category="list-text"><block ref="c10b8a77856c1097f8b3038f1bfab45b" category="inline-link-rx"></block></block>
   <block id="a1ebf612d281c8e7fb16bbfa253b9627" category="inline-link">發現ONTAP集群</block>
   <block id="49aaf65c31a811a37b2627a951f6f6d2" category="list-text"><block ref="49aaf65c31a811a37b2627a951f6f6d2" category="inline-link-rx"></block></block>
-  <block id="ff45d71e69fb5930de79de7c94326d7b" category="doc">卷緩存</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供對版權聲明、商標、專利等的存取。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
@@ -405,7 +404,6 @@
   <block id="086ae240dc59a72dee947da562cf17da" category="list-text"><block ref="638e664503cbc2b4d03651ad48f065e4" category="inline-link-macro-rx"></block> 。</block>
   <block id="57eaca7fde0d682a5f4bb1194791b589" category="inline-link-macro">更改匯出策略並調整快取大小</block>
   <block id="403db9049e8fc74fb1c958367db6cfab" category="list-text"><block ref="63c74ca1cdc9ec0d7fd9f52c97b2e161" category="inline-link-macro-rx"></block> 。</block>
-  <block id="2d2bb0bd1efc96e65cb6deaedc742c41" category="list-text"><block ref="58044a3c76af89738ba5bad3bbf696eb" category="inline-link-macro-rx"></block> 。</block>
   <block id="158812c8336b1e3bf3dba3a26e130f17" category="list-text"><block ref="1f92bc5779f2f7dc3b853d4a9f3506c9" category="inline-link-macro-rx"></block>在NetApp Console審核頁面上。</block>
   <block id="08f83993cc2b93af6175018abeb278b0" category="summary">磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區。您可以使用NetApp磁碟區快取來加快資料存取速度或卸載存取頻繁的磁碟區的流量。快取磁碟區非常適合讀取密集型工作負載，尤其是客戶端需要重複存取相同資料的情況。</block>
   <block id="a047d92e042b55157df7f9db9b86d574" category="doc">在稽核頁面上監控磁碟區快取作業</block>
@@ -429,4 +427,5 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">什麼是新的</block>
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">已知限制</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識和支持</block>
+  <block id="e14044bbc0be87dcdad7e3cd36657fad" category="sidebar">NetApp區快取</block>
 </blocks>
