@@ -1,13 +1,13 @@
 ---
 indexpage:
-  title: NetApp區快取
+  title: NetApp Volume Caching
   lead: 磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區。您可以使用磁碟區快取來加快資料存取速度或卸載存取頻繁的磁碟區的流量。快取磁碟區非常適合讀取密集型工作負載，尤其是客戶端需要重複存取相同資料的情況。
   tiles:
   - title: 開始
     links:
     - title: 了解卷緩存
       url: "/get-started/cache-intro.html"
-    - title: 磁碟區快取的新功能
+    - title: 卷緩存的新特性
       url: "/release-notes/cache-whats-new.html"
     - title: 快速啟動
       url: "/get-started/cache-quick-start.html"
@@ -19,7 +19,7 @@ indexpage:
       url: "/get-started/cache-faq.html"
   - title: 使用卷緩存
     links:
-    - title: 使用卷宗快取概述
+    - title: 使用卷宗快取概覽
       url: "/use/cache-use-overview.html"
     - title: 創建快取
       url: "/use/cache-create.html"

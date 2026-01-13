@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/cache-setup.html 
-keywords: bluexp, volume caching, 
-summary: 若要使用磁碟區緩存，請執行幾個步驟進行設定。 
+keywords: bluexp, Volume Caching, 
+summary: 若要使用磁碟區緩存，請執行下列步驟進行設定。 
 ---
 = 設定卷緩存
 :hardbreaks:
@@ -12,11 +12,11 @@ summary: 若要使用磁碟區緩存，請執行幾個步驟進行設定。
 
 
 [role="lead"]
-若要使用磁碟區緩存，請執行幾個步驟進行設定。
+若要使用磁碟區緩存，請執行下列步驟進行設定。
 
 * 審查link:../get-started/cache-prerequisites.html["先決條件"]以確保您的環境已準備就緒。
 * 建立控制台代理。
-* 建立可以支援磁碟區快取的系統。
+* 創建能夠支援卷宗緩存的系統。
 
 
 
@@ -25,7 +25,7 @@ summary: 若要使用磁碟區緩存，請執行幾個步驟進行設定。
 
 下一步是在NetApp Console中建立控制台代理程式。
 
-要在使用卷宗快取之前建立控制台代理，請參閱NetApp Console文檔，其中介紹了 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["如何建立控制台代理"^]。
+在使用磁碟區快取之前建立控制台代理，請參閱NetApp Console文檔，其中對此進行了描述。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["如何建立控制台代理"^]。
 
 
 

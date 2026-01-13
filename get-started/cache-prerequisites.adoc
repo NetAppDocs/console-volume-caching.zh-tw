@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/cache-prerequisites.html 
-keywords: what are volume caching requirements, volume caching prerequisites 
-summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的支援來開始使用磁碟區快取。 
+keywords: what are Volume Caching requirements, Volume Caching prerequisites 
+summary: 若要開始使用磁碟區緩存，請先驗證您的環境、網路存取、登入和 Web 瀏覽器是否支援。 
 ---
 = 磁碟區快取先決條件
 :hardbreaks:

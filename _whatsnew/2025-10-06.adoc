@@ -1,12 +1,12 @@
-= BlueXP volume caching現在是卷緩存
+= BlueXP卷快取現已更名為卷宗緩存
 :allow-uri-read: 
 
 
 
 
-=== BlueXP volume caching現在是卷緩存
+=== BlueXP卷快取現已更名為卷宗緩存
 
-BlueXP volume caching已重新命名為磁碟區快取。
+BlueXP Volume Caching 已更名為 Volume Caching。
 
 您可以透過選擇「*Mobility*」>「*Volume caching*」從NetApp Console左側導覽列存取它。
 
