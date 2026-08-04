@@ -14,7 +14,7 @@ summary: 如果您只是想快速找到問題的答案，此常見問題解答�
 [role="lead"]
 如果您只是想快速找到問題的答案，此常見問題解答可以為您提供協助。
 
-*卷宗快取 URL 是什麼？ *在瀏覽器中輸入網址： https://console.netapp.com/["https://console.netapp.com/"^] 造訪BlueXP控制台。
+*什麼是 Volume Caching URL？*要取得 URL，請在瀏覽器中輸入： https://console.netapp.com/["https://console.netapp.com/"^]以存取 NetApp Console。
 
 使用卷宗快取需要許可證嗎？不需要NetApp許可證文件 (NLF)。
 

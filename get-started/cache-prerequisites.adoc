@@ -24,7 +24,7 @@ summary: 若要開始使用磁碟區緩存，請先驗證您的環境、網路�
 
 * 在NetApp Console中：
 +
-** 需要在NetApp Console中設定控制台代理程式。所有來源集群和目標集群必須位於同一個控制台代理上。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["BlueXP快速入門"^]和 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["了解控制台代理"^]。
+** 需要在 NetApp Console 中設定 Console 代理程式。所有來源和目標叢集必須位於同一個 Console 代理程式上。請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html["適用於 NetApp Console 的開始使用工作流程"^]和link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["了解控制台代理"^]。
 ** 應設置工作環境。
 ** 應將叢集新增至目標工作環境中，並使其處於開啟或降級狀態。
 ** 標準NetApp Console要求。參考 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["NetApp Console需求"^]。

@@ -28,6 +28,7 @@ NOTE: 快取磁碟區使用的 IPSpace 取決於來源儲存虛擬機器所使�
 
 
 
+[[steps-from-the-volume-caching-landing-page]]
 == 從磁碟區快取登入頁面開始的步驟
 
 . 登入NetApp Console。
@@ -72,6 +73,7 @@ TIP: 一個好的經驗法則是快取卷大小應為來源磁碟區大小的 15
 
 
 
+[[steps-from-the-netapp-console-systems-page]]
 == NetApp Console系統頁面中的步驟
 
 . 從NetApp Console系統頁面中，選擇工作環境。

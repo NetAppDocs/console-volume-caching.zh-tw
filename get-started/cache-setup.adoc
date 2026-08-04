@@ -21,14 +21,16 @@ summary: 若要使用磁碟區緩存，請執行下列步驟進行設定。
 
 
 
+[[create-a-console-agent-in-the-netapp-console]]
 == 在NetApp Console中建立控制台代理
 
 下一步是在NetApp Console中建立控制台代理程式。
 
-在使用磁碟區快取之前建立控制台代理，請參閱NetApp Console文檔，其中對此進行了描述。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["如何建立控制台代理"^]。
+若要在使用 Volume Caching 之前建立 Console 代理程式，請參閱 NetApp Console 文件，以取得 link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#what-a-console-agent-does["Console 代理程式"^] 的相關資訊。
 
 
 
+[[create-systems]]
 == 創建系統
 
 如果您還沒有這樣做，您需要為來源和目標建立系統。

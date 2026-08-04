@@ -16,6 +16,7 @@ summary: 已知限制標識了此版本服務不支援或無法與其正確互�
 
 
 
+[[limitation-in-copying-cache-export-policy-rules]]
 == 複製快取導出策略規則的限制
 
 在以下情況下，快取匯出策略規則不會複製到快取磁碟區：
@@ -28,6 +29,7 @@ summary: 已知限制標識了此版本服務不支援或無法與其正確互�
 
 
 
+[[cache-creation-fails-for-storage-vms-with-same-name]]
 == 同名儲存虛擬機器的快取建立失敗
 
 如果來源叢集和目標叢集使用同名的儲存虛擬機，則不會建立快取。
@@ -36,6 +38,7 @@ summary: 已知限制標識了此版本服務不支援或無法與其正確互�
 
 
 
+[[delay-in-displaying-new-or-recently-edited-export-policies]]
 == 延遲顯示新的或最近編輯的出口政策
 
 建立快取時，您可能無法在清單中看到最近建立或編輯的匯出策略。
@@ -44,6 +47,7 @@ summary: 已知限制標識了此版本服務不支援或無法與其正確互�
 
 
 
+[[cache-creation-fails-when-destination-has-only-cifs-protocol-enabled]]
 == 當目標僅啟用 CIFS 協定時，快取建立失敗
 
 如果來源叢集或目標叢集具有ONTAP 9.10.1 或更早版本，且目標叢集僅啟用了 CIFS 協議，則快取建立失敗。

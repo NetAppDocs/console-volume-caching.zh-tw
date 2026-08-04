@@ -20,6 +20,7 @@ summary: 磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區�
 
 
 
+[[netapp-console]]
 == NetApp Console
 
 可以透過NetApp Console存取卷宗快取。
@@ -28,16 +29,18 @@ NetApp Console提供企業級跨本機和雲端環境的NetApp儲存和資料服
 
 您不需要許可證或訂閱即可開始使用NetApp Console，並且只有當您需要在雲端部署控制台代理程式以確保與儲存系統或NetApp資料服務的連線時才需要付費。但是，一些可從控制台存取的NetApp資料服務是需要授權或基於訂閱的。
 
-詳細了解 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetApp Console"]。
+深入瞭解 link:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Console"]。
 
 
 
+[[what-is-a-cache]]
 == 什麼是緩存？
 
 快取是位於主機和資料來源之間的暫存位置。快取的目的是儲存來源資料中經常存取的部分，以便以比從來源取得資料更快的速度提供資料。快取在讀取密集型環境中最有用，在這種環境中資料被存取多次並由多個主機共用。快取系統比有資料來源的系統更快，這是透過更快的儲存系統和快取儲存空間與主機的接近性來實現的。
 
 
 
+[[benefits-of-volume-caching]]
 == 卷緩存的優勢
 
 磁碟區快取具有以下優勢：
@@ -52,6 +55,7 @@ NetApp Console提供企業級跨本機和雲端環境的NetApp儲存和資料服
 
 
 
+[[what-you-can-do-with-volume-caching]]
 == 磁碟區快取的功能
 
 卷緩存使您能夠充分利用多種NetApp技術來實現以下目標：
@@ -64,18 +68,21 @@ NetApp Console提供企業級跨本機和雲端環境的NetApp儲存和資料服
 
 
 
+[[cost]]
 == 成本
 
 NetApp不會向您收取磁碟區快取費用，但您需要查看您的雲端供應商是否收取適用的資料流入和流出費用。
 
 
 
+[[licensing]]
 == 授權
 
 卷快取不需要特殊的ONTAP許可證。
 
 
 
+[[how-volume-caching-works]]
 == 磁碟區快取的工作原理
 
 快取磁碟區是由來源磁碟區支援的稀疏填充磁碟區。快取磁碟區可以與來源磁碟區位於同一群集上，也可以位於不同的叢集上。
