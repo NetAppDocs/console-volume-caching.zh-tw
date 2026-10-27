@@ -4,7 +4,7 @@ permalink: get-started/cache-quick-start.html
 keywords: how to get started with Volume Caching, Volume Caching quick start 
 summary: 只需幾個步驟即可開始使用磁碟區快取。 
 ---
-= 卷快取快速入門
+= NetApp Volume Caching 快速入門
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -28,6 +28,6 @@ link:../get-started/cache-setup.html["設定卷緩存"] 。
 
 [role="quick-margin-list"]
 * link:../use/cache-create.html["創建快取"] 。
-* link:../use/cache-use-overview.html["管理快取、編輯快取、調整快取大小或刪除緩存"] 。
+* link:../use/cache-manage.html["管理快取"].
 * link:../use/monitor-jobs.html["監控卷快取操作"]。
 

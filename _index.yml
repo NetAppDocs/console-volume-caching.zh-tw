@@ -19,8 +19,6 @@ indexpage:
       url: "/get-started/cache-faq.html"
   - title: 使用卷緩存
     links:
-    - title: 使用卷宗快取概覽
-      url: "/use/cache-use-overview.html"
     - title: 創建快取
       url: "/use/cache-create.html"
     - title: 管理快取

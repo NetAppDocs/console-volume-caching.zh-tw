@@ -42,7 +42,6 @@
   <block id="4a43cddfeeabba4570c14c252dec0bd1" category="list-text">登入控制台。</block>
   <block id="685bf0c6938aac694b7f715ca5ab7594" category="list-text">從控制台左側導覽中，選擇*移動性*&gt;*卷快取*。</block>
   <block id="e9d0563880c518332c5657bb388dc935" category="inline-image-macro">磁碟區快取登陸頁的圖片</block>
-  <block id="783400bbca91266f6f919a9d8401a790" category="doc">磁碟區快取先決條件</block>
   <block id="84804abf3404a430e85ae3299587a6b0" category="paragraph">首先驗證您的操作環境、登入、網路存取和 Web 瀏覽器是否已準備就緒。</block>
   <block id="9e25219bfef39dc2d94805b599244f8d" category="list-text">ONTAP 9.8 及更高版本</block>
   <block id="6bc8ee47a10f11a50d1b88f0e1669fee" category="list-text">叢集管理員ONTAP權限</block>
@@ -65,8 +64,6 @@
   <block id="d2b78bb589121de795035bc504cc0150" category="paragraph">以下是您接下來可以做的事情。</block>
   <block id="15a05e063d4c5c1c840a1358ea5e2f1a" category="inline-link-macro">創建快取</block>
   <block id="6d8c022b864e0ac2a0521e01b0a148ef" category="list-text"><block ref="08994cd66141241fcfdbc13ed0e82eff" category="inline-link-macro-rx"></block> 。</block>
-  <block id="36d2dfb130cc56d5eda3b8749b5bd6df" category="inline-link-macro">管理快取、編輯快取、調整快取大小或刪除緩存</block>
-  <block id="7feb77d14601611c1fbc66f8aea36e7b" category="list-text"><block ref="06832ac35077da45cc1af571e236bfcd" category="inline-link-macro-rx"></block> 。</block>
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">先決條件</block>
   <block id="28afabf1cd8784eb84b3926b994169ea" category="list-text">審查<block ref="c6b48cc2d47e2f989af724d3298e55c0" category="inline-link-macro-rx"></block>以確保您的環境已準備就緒。</block>
   <block id="3847705074d8f4f4a3ad3b8e472e4a7c" category="list-text">建立控制台代理。</block>
@@ -193,9 +190,6 @@
   <block id="423f18c1cd7d2cab76c65e9cbd30b5d2" category="paragraph">快取卷將調整為新的百分比。</block>
   <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">選擇*刪除*。</block>
   <block id="9b4532069e9bc4e1de3c019493dc5ee0" category="list-text">勾選此方塊。</block>
-  <block id="086ae240dc59a72dee947da562cf17da" category="list-text"><block ref="638e664503cbc2b4d03651ad48f065e4" category="inline-link-macro-rx"></block> 。</block>
-  <block id="57eaca7fde0d682a5f4bb1194791b589" category="inline-link-macro">更改匯出策略並調整快取大小</block>
-  <block id="403db9049e8fc74fb1c958367db6cfab" category="list-text"><block ref="63c74ca1cdc9ec0d7fd9f52c97b2e161" category="inline-link-macro-rx"></block> 。</block>
   <block id="08f83993cc2b93af6175018abeb278b0" category="summary">磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區。您可以使用NetApp磁碟區快取來加快資料存取速度或卸載存取頻繁的磁碟區的流量。快取磁碟區非常適合讀取密集型工作負載，尤其是客戶端需要重複存取相同資料的情況。</block>
   <block id="da27a3a4029fc8a5d227b9d73327f99d" category="list-text">從NetApp Console選單中，選擇 *管理* &gt; *稽核*。</block>
   <block id="cb7056f588b57ee15c8c6aa56fe4dd4a" category="list-text">（可選）按時間、服務、操作、代理、資源、使用者或狀態進行過濾。</block>
@@ -217,7 +211,6 @@
   <block id="4b2fc04d71554e53f61c6c4001e2b287" category="paragraph">透過BlueXP磁碟區緩存，您可以為雲端（特別是Amazon FSx for NetApp ONTAP、 Cloud Volumes ONTAP）和本機工作環境提供快取功能。</block>
   <block id="033e2516825fa188c29e35e7c32156f0" category="doc">BlueXP卷快取現已更名為卷宗緩存</block>
   <block id="81f5cfd86553bef12a7f07a5e054d153" category="paragraph">BlueXP Volume Caching 已更名為 Volume Caching。</block>
-  <block id="944de674eb4a05a94f0f416e5231a567" category="doc">磁碟區快取常見問題解答</block>
   <block id="b2220f076c005c14cef060497d839343" category="paragraph">使用卷宗快取需要許可證嗎？不需要NetApp許可證文件 (NLF)。</block>
   <block id="f788ef9bf8e4b88d2e7224fcf76da51b" category="paragraph">如何啟用卷宗快取？磁碟區快取無需任何啟用操作。磁碟區快取選項會自動顯示在NetApp Console左側導覽列中。</block>
   <block id="f5bcb165d2c026accbfd21dc4ade2dd0" category="summary">磁碟區緩存在遠端位置提供持久的、可寫入的磁碟區。您可以使用磁碟區快取來加快資料存取速度或卸載存取頻繁的磁碟區的流量。快取磁碟區非常適合讀取密集型工作負載，尤其是客戶端需要重複存取相同資料的情況。</block>
@@ -231,7 +224,6 @@
   <block id="6596318b2186d863bd6851ede5ee91c9" category="section-title">磁碟區快取的工作原理</block>
   <block id="72e2b4490e5fa25b9d294507a160d51d" category="paragraph">磁碟區快取會讀取快取磁碟區中是否包含客戶端請求的資料的請求。否則，磁碟區快取服務會從來源磁碟區請求數據，並在處理客戶端請求之前儲存資料。後續的資料請求將直接從快取卷中提供。這樣可以提高重複存取相同資料時的效能，因為在第一次請求之後，資料不再需要透過網路傳輸或從過載的系統中提供服務。</block>
   <block id="0984bad2a8a496db79f029c55177dd85" category="summary">若要開始使用磁碟區緩存，請透過存取NetApp Console中的服務。</block>
-  <block id="522d9bd14dfc30e55cb7209adfdb8eea" category="doc">存取卷緩存</block>
   <block id="006e769dfd8965eab4630dcb8377c3ea" category="paragraph">您可以使用NetApp Console存取卷宗快取選項。</block>
   <block id="0d9a145dab06760ec0b417a281a1268b" category="paragraph">磁碟區快取儀錶板隨即出現。 <block ref="1d5ddc4a04ccc8130b7d403f1b6e6b88" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f0b492dd4990a6b43e64e6f06e156df2" category="inline-link-macro">設定卷緩存</block>
@@ -239,17 +231,13 @@
   <block id="7ee2d9ffe0860e3636b0a8afa7656d0a" category="summary">若要開始使用磁碟區緩存，請先驗證您的環境、網路存取、登入和 Web 瀏覽器是否支援。</block>
   <block id="6be39a76555626ccc4abd6cbf047cdd4" category="paragraph">要使用卷緩存，您應該確保您的環境滿足所有要求。</block>
   <block id="2d8cece0049367991b914b6b1a3c3f95" category="summary">只需幾個步驟即可開始使用磁碟區快取。</block>
-  <block id="1970c0c9f9c999a61d6932701ece9ead" category="doc">卷快取快速入門</block>
   <block id="b3652feb277631ac5ea4ae7697ca0544" category="paragraph">以下是開始使用磁碟區快取所需的步驟概述。每個步驟中的連結都會帶您到一個提供更多詳細資訊的頁面。</block>
   <block id="a2ebee079f16a4dd5be0168a3956a0c0" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 設定卷緩存</block>
   <block id="503192a68053645c73e6980f1ccb3ccb" category="inline-link-macro">監控卷快取操作</block>
   <block id="3edd8a9fa9947416caecc886e46fdaed" category="list-text"><block ref="a01ab11ac22ae6b95a3895f32824a3bb" category="inline-link-macro-rx"></block>。</block>
   <block id="ada3c6bfdc22ece41e035ddca47abb5d" category="summary">若要使用磁碟區緩存，請執行下列步驟進行設定。</block>
   <block id="14b492c5a59daceff1c47e1fa3ab1153" category="list-text">創建能夠支援卷宗緩存的系統。</block>
-  <block id="0a063cd26a1bbcc09925261862a0a057" category="doc">卷緩存的已知局限性</block>
-  <block id="55faa3077ad6eac1174df58be9138964" category="doc">卷緩存的新特性</block>
   <block id="edab0746c168cf99de3d1184db89eae9" category="paragraph">了解卷緩存的新功能。</block>
-  <block id="2596872be52ae24ad1bcecec5ebebdf5" category="doc">使用卷緩存創建緩存</block>
   <block id="40bffc6e5a41371152da5daf50118a7c" category="paragraph">卷緩存可在遠端位置提供一個持久的、可寫入的磁碟區。您可以使用磁碟區快取來加快資料存取速度或將流量從訪問量大的磁碟區中卸載。快取磁碟區非常適合讀取密集型工作負載，尤其適用於客戶端需要重複存取相同資料的情況。您可以使用來自來源系統的一個或多個來源磁碟區作為快取來源，在Amazon FSx for ONTAP、 Cloud Volumes ONTAP和本機ONTAP之間建立磁碟區快取。然後，您需要為快取磁碟區選擇儲存虛擬機器。</block>
   <block id="ab380cc6aa3b67ca5f33cf0f42933ba2" category="section-title">從磁碟區快取登入頁面開始的步驟</block>
   <block id="d8de82c9c43ef18d8abcf4c2453d43d6" category="paragraph">您將進入卷宗緩存儀表板頁面。首次使用卷宗快取選項時，需要新增快取資訊。隨後，儀表板出現並顯示有關快取的資料。</block>
@@ -259,21 +247,15 @@
   <block id="affcb246f5ad24ec6b828f8924c8d053" category="list-text">編輯卷快取並更改其大小等。編輯功能將提供查看和更改其他屬性的選項，並且在即將發布的版本中，編輯功能還將添加更多屬性。</block>
   <block id="b7ccf72261654a1124ca86db25a61682" category="list-text">從NetApp Console左側導覽列中選擇「移動性」&gt;「磁碟區快取」。</block>
   <block id="83c798e0c9245ebfa233ca02f0ce296c" category="paragraph">如果不再需要緩存，可以將其刪除。這將刪除卷緩存關係並刪除目標卷快取。</block>
-  <block id="a4728e0d5e034526a76a2bcf15fc2fb5" category="doc">使用卷宗快取概覽</block>
-  <block id="15e2bee7208afa4bce8f49e8622cfeb3" category="paragraph">使用磁碟區緩存，您可以實現以下目標：</block>
-  <block id="d98e80f17411ff34bd8cefdeb4d9c9ca" category="list-text"><block ref="a01ab11ac22ae6b95a3895f32824a3bb" category="inline-link-macro-rx"></block> 在NetApp Console審核頁面上。</block>
-  <block id="cdbe10615b18836cd5229608034b3885" category="doc">在「審核」頁面上監控磁碟區快取作業</block>
   <block id="bfa48a0000150f1a127692fcbbd95675" category="paragraph">您可以使用NetApp Console審核頁面監控所有磁碟區快取作業並確定其進度。</block>
   <block id="6f267103f7f652e22e0ead9f66014cd4" category="sidebar">NetApp Volume Caching</block>
   <block id="c16fdea743f635a195afe62e710ad0e4" category="sidebar">卷緩存的新特性</block>
   <block id="c36dbd5882b0638107e564376ac7202c" category="sidebar">存取卷宗快取選項</block>
   <block id="ddd8febf1be514ee5966f657288dabb1" category="sidebar">使用卷緩存</block>
-  <block id="cfa34b29283f7edb5353b2f0136a0382" category="sidebar">使用卷宗快取概覽</block>
   <block id="aaac6bc909fa38965c87187f77135ba2" category="sidebar">監控卷宗快取作業</block>
   <block id="5d242f37d3e1a8b2a39ebe59f053d249" category="paragraph">*什麼是 Volume Caching URL？*要取得 URL，請在瀏覽器中輸入：<block ref="50afa4cc4e54d55b53b9cfffe1bc930c" category="inline-link-rx"></block>以存取 NetApp Console。</block>
   <block id="e3fe60bde26f43a3a5d1ce1113e7cf59" category="paragraph">深入瞭解 <block ref="1d67e8a78a200565a68ec48273c17246" category="inline-link-macro-rx"></block>。</block>
   <block id="0b1338766341d9e4efb068789c59087a" category="inline-link-macro">適用於 NetApp Console 的開始使用工作流程</block>
-  <block id="a4b080650236b34a40c4af6fc3e19f10" category="list-text">需要在 NetApp Console 中設定 Console 代理程式。所有來源和目標叢集必須位於同一個 Console 代理程式上。請參閱<block ref="7803a6edb330ab0992b6c2bdbd7b02cf" category="inline-link-macro-rx"></block>和<block ref="60ce1b0a0c322e03a03b2c2641ba72c3" category="inline-link-macro-rx"></block>。</block>
   <block id="033ce09819d553e6a77430de2f0cc899" category="inline-link-macro">Console 代理程式</block>
   <block id="27c7051c6017205575df5ebdcc242391" category="paragraph">若要在使用 Volume Caching 之前建立 Console 代理程式，請參閱 NetApp Console 文件，以取得 <block ref="760d18c67ed0461ccd4efce45502f48f" category="inline-link-macro-rx"></block> 的相關資訊。</block>
   <block id="0c798cc11f8ddc52d0bd3006eaa122fc" category="summary">NetApp 提供多種方式為 Console 提供支援。我們提供豐富的免費自助支援選項，全天候 24x7 可用，例如知識庫 （KB） 文章和社群論壇。您的支援註冊包含透過線上工單系統提供的遠端技術支援。</block>
@@ -419,4 +401,20 @@
   <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">這是系統產生的與您的電子郵件地址對應的 ID。您可以在 *NSS Management* 頁面的 <block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> 選單中找到您的電子郵件地址。</block>
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">如果您需要刷新登入憑證令牌，<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> 選單中還有一個「更新憑證」選項。</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">使用此選項將提示您重新登入。請注意，這些帳戶的 token 將在 90 天後過期。屆時將發布通知提醒您。</block>
+  <block id="eab58e1d970237221383b09ffe1d5c86" category="doc">關於 NetApp Volume Caching 的常見問題</block>
+  <block id="e1d95a674799ededdc684d7223506d7b" category="doc">了解 NetApp Volume Caching</block>
+  <block id="f2dd2401ff5c3188915c73da5a12702c" category="doc">存取 NetApp Volume Caching</block>
+  <block id="c3f67b582c44a6153a9332777610d257" category="doc">NetApp Volume Caching 的先決條件</block>
+  <block id="c41bb11b4cfa2e8457552c1e492ee1b7" category="list-text">必須在 NetApp Console 中設定 Console 代理程式。所有來源和目標叢集必須位於同一個 Console 代理程式上。請參閱 <block ref="7803a6edb330ab0992b6c2bdbd7b02cf" category="inline-link-macro-rx"></block> 和 <block ref="60ce1b0a0c322e03a03b2c2641ba72c3" category="inline-link-macro-rx"></block>。</block>
+  <block id="2ef62921b9052488dc447fb605429a36" category="doc">NetApp Volume Caching 快速入門</block>
+  <block id="cf997587c175eab687f1c94d8e0dd275" category="list-text"><block ref="be4a66e39669afe0b43fafdc5b54ebdd" category="inline-link-macro-rx"></block>.</block>
+  <block id="fd06bc4b0fb6177a274a02d499c9a2f2" category="doc">設定 NetApp Volume Caching</block>
+  <block id="23a48427348f09c9c9ec57550deef657" category="doc">NetApp Volume Caching 的法律聲明</block>
+  <block id="f7a39f371e65086e9b9b3c39396dd0d6" category="doc">NetApp Volume Caching 的已知限制</block>
+  <block id="8677fee464cec8ba0de99992db85ad7e" category="doc">NetApp Volume Caching 的新功能</block>
+  <block id="86d05b78bb98743e2602772c13a2e077" category="doc">取得有關 NetApp Volume Caching 的協助</block>
+  <block id="fd32fb93ba0bc85ef429d4f0f3334e9f" category="doc">註冊 NetApp Volume Caching 支援</block>
+  <block id="4e692b664686ba8be02357822db446b2" category="doc">使用 NetApp Volume Caching 建立快取</block>
+  <block id="082dbbfa6d531e507360f64a0bb2e00e" category="doc">在 NetApp Volume Caching 中管理快取</block>
+  <block id="c2a44dd0dc880198657072bcb1f11fb8" category="doc">在「審核」頁面上監控 NetApp Volume Caching 作業</block>
 </blocks>

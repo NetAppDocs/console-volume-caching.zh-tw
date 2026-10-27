@@ -4,7 +4,7 @@ permalink: release-notes/cache-limitations.html
 keywords: Volume Caching, bluexp 
 summary: 已知限制標識了此版本服務不支援或無法與其正確互通的平台、裝置或功能。 
 ---
-= 卷緩存的已知局限性
+= NetApp Volume Caching 的已知限制
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

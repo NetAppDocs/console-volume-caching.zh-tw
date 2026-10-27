@@ -1,0 +1,8 @@
+---
+permalink: use/cache-use-overview.html 
+redirect: console-volume-caching/use/cache-create.html 
+---
+= 
+:allow-uri-read: 
+
+

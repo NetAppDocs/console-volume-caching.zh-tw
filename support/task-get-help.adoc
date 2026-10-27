@@ -4,7 +4,7 @@ permalink: support/task-get-help.html
 keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
 summary: NetApp 提供多種方式為 Console 提供支援。我們提供豐富的免費自助支援選項，全天候 24x7 可用，例如知識庫 （KB） 文章和社群論壇。您的支援註冊包含透過線上工單系統提供的遠端技術支援。 
 ---
-= 獲取協助
+= 取得有關 NetApp Volume Caching 的協助
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

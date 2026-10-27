@@ -4,7 +4,7 @@ permalink: get-started/cache-setup.html
 keywords: bluexp, Volume Caching, 
 summary: 若要使用磁碟區緩存，請執行下列步驟進行設定。 
 ---
-= 設定卷緩存
+= 設定 NetApp Volume Caching
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
